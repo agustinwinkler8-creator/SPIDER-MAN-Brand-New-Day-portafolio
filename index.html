@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spider-Man: Brand New Day - Sitio oficial. Descubre los villanos, la historia y el mundo de la nueva película de Marvel.">
+    <meta name="theme-color" content="#08090A">
+    <title>SPIDER-MAN: BRAND NEW DAY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-text">INITIALIZING</div>
+        <div class="loading-rings">
+            <div class="loading-ring"></div>
+            <div class="loading-ring"></div>
+            <div class="loading-ring"></div>
+        </div>
+    </div>
+
+    <!-- Text Web Background -->
+    <div class="text-web-background" id="text-web"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav">
+        <div class="nav-brand">
+            <span class="nav-marvel">MARVEL STUDIOS</span>
+            <span class="nav-title">SM: BND</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link">Inicio</a></li>
+            <li><a href="#sinopsis" class="nav-link">Historia</a></li>
+            <li><a href="#villanos" class="nav-link">Villanos</a></li>
+            <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        </ul>
+        <div class="nav-hud">
+            <span class="hud-coord">NYC 40.71</span>
+            <span class="hud-status" id="hud-status">ONLINE</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-rings-container">
+            <svg class="hero-rings" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+                <g id="ring-group"></g>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-circle">
+                <div class="rotating-text" id="rotating-text">
+                    <svg viewBox="0 0 500 500">
+                        <defs>
+                            <path id="text-circle" d="M 250,250 m -200,0 a 200,200 0 1,1 400,0 a 200,200 0 1,1 -400,0"/>
+                        </defs>
+                        <text fill="rgba(245,245,247,0.3)" font-size="24" font-family="'Kode Mono', monospace" letter-spacing="8">
+                            <textPath href="#text-circle">WE ARE THE NEW YORK ECOSYSTEM • BRAND NEW DAY • </textPath>
+                        </text>
+                    </svg>
+                </div>
+                <div class="hero-logo">
+                    <span class="logo-spider">SPIDER-MAN</span>
+                    <span class="logo-sub">BRAND NEW DAY</span>
+                </div>
+            </div>
+            <div class="hero-meta">
+                <span class="meta-date">31 JUL 2026</span>
+                <span class="meta-separator">|</span>
+                <span class="meta-theaters">EXCLUSIVELY IN THEATRES</span>
+            </div>
+        </div>
+        <div class="hero-poster">
+            <img src="images/hero-poster.png" alt="Spider-Man Brand New Day Poster" loading="eager">
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Sinopsis Section -->
+    <section class="sinopsis" id="sinopsis">
+        <div class="sinopsis-container">
+            <div class="sinopsis-video">
+                <div class="video-frame">
+                    <img src="images/peter-parker.jpg" alt="Peter Parker Spider-Man" loading="lazy">
+                    <div class="video-overlay"></div>
+                    <div class="video-hud">
+                        <div class="hud-corner top-left"></div>
+                        <div class="hud-corner top-right"></div>
+                        <div class="hud-corner bottom-left"></div>
+                        <div class="hud-corner bottom-right"></div>
+                        <div class="hud-data">
+                            <span class="hud-label">LON 40.71 | LAT -74.00</span>
+                            <span class="hud-alert">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8 1L15 14H1L8 1Z" stroke="#FF453A" stroke-width="1.5" fill="none"/>
+                                    <path d="M8 6V10M8 11.5V12" stroke="#FF453A" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                MUTATION DETECTED
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sinopsis-content">
+                <div class="section-label">[ SECCION 01 ]</div>
+                <h2 class="sinopsis-title">THE MUTATION<br>IS JUST BEGINNING</h2>
+                <p class="sinopsis-text">
+                    Despues de que el mundo olvido a Peter Parker, la ciudad misma comienza a cambiar. 
+                    Nuevas amenazas emergen de las sombras, y la linea entre heroe y monstruo se difumina.
+                </p>
+                <p class="sinopsis-text">
+                    Spider-Man debe enfrentarse a villanos callejeros como Scorpion, Tombstone, 
+                    Tarantula y el clan ninja de The Hand, mientras descubre que ser un heroe 
+                    de barrio es mas peligroso que nunca.
+                </p>
+                <div class="sinopsis-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">VILLANOS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">HEROES</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">CIUDAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Villanos Section -->
+    <section class="villanos" id="villanos">
+        <div class="villanos-header">
+            <div class="section-label">[ SECCION 02 ]</div>
+            <h2 class="villanos-title">THE WEB</h2>
+            <p class="villanos-subtitle">El ecosistema de amenazas de Nueva York</p>
+        </div>
+        <div class="villanos-grid">
+            <!-- Spider-Man -->
+            <article class="villano-card" data-character="spiderman">
+                <div class="card-image-wrapper">
+                    <img src="images/node-spiderman.png" alt="Spider-Man" class="card-image" loading="lazy">
+                    <svg class="spider-web-mesh" preserveAspectRatio="none" viewBox="0 0 400 500">
+                        <defs>
+                            <radialGradient id="glow-spiderman" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#0A84FF" stop-opacity="1"/>
+                                <stop offset="100%" stop-color="#0A84FF" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-number">01</span>
+                    <h3 class="card-name">SPIDER-MAN</h3>
+                    <p class="card-description">Peter Parker. Olvidado por el mundo, protegiendo la ciudad.</p>
+                    <div class="card-meta">
+                        <span class="card-status status-hero">HEROE</span>
+                        <span class="card-threat">NIVEL: ALTO</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Scorpion -->
+            <article class="villano-card" data-character="scorpion">
+                <div class="card-image-wrapper">
+                    <img src="images/node-scorpion.jpg" alt="Scorpion" class="card-image" loading="lazy">
+                    <svg class="spider-web-mesh" preserveAspectRatio="none" viewBox="0 0 400 500">
+                        <defs>
+                            <radialGradient id="glow-scorpion" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#32D74B" stop-opacity="1"/>
+                                <stop offset="100%" stop-color="#32D74B" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-number">02</span>
+                    <h3 class="card-name">SCORPION</h3>
+                    <p class="card-description">Mac Gargan. Venenoso, implacable, con una decada de rencor.</p>
+                    <div class="card-meta">
+                        <span class="card-status status-villain">VILLANO</span>
+                        <span class="card-threat">NIVEL: EXTREMO</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tombstone -->
+            <article class="villano-card" data-character="tombstone">
+                <div class="card-image-wrapper">
+                    <img src="images/node-tombstone.jpg" alt="Tombstone" class="card-image" loading="lazy">
+                    <svg class="spider-web-mesh" preserveAspectRatio="none" viewBox="0 0 400 500">
+                        <defs>
+                            <radialGradient id="glow-tombstone" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#E5E5EA" stop-opacity="1"/>
+                                <stop offset="100%" stop-color="#E5E5EA" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-number">03</span>
+                    <h3 class="card-name">TOMBSTONE</h3>
+                    <p class="card-description">Lonnie Lincoln. La mano fria del bajo mundo de Nueva York.</p>
+                    <div class="card-meta">
+                        <span class="card-status status-villain">VILLANO</span>
+                        <span class="card-threat">NIVEL: ALTO</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Tarantula -->
+            <article class="villano-card" data-character="tarantula">
+                <div class="card-image-wrapper">
+                    <img src="images/gallery-1.jpg" alt="Tarantula" class="card-image" loading="lazy">
+                    <svg class="spider-web-mesh" preserveAspectRatio="none" viewBox="0 0 400 500">
+                        <defs>
+                            <radialGradient id="glow-tarantula" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#BF5AF2" stop-opacity="1"/>
+                                <stop offset="100%" stop-color="#BF5AF2" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-number">04</span>
+                    <h3 class="card-name">TARANTULA</h3>
+                    <p class="card-description">Maestro de combate. Un depredador en las sombras.</p>
+                    <div class="card-meta">
+                        <span class="card-status status-villain">VILLANO</span>
+                        <span class="card-threat">NIVEL: CRITICO</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- The Hand -->
+            <article class="villano-card" data-character="thehand">
+                <div class="card-image-wrapper">
+                    <img src="images/node-thehand.jpg" alt="The Hand" class="card-image" loading="lazy">
+                    <svg class="spider-web-mesh" preserveAspectRatio="none" viewBox="0 0 400 500">
+                        <defs>
+                            <radialGradient id="glow-hand" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#FF453A" stop-opacity="1"/>
+                                <stop offset="100%" stop-color="#FF453A" stop-opacity="0"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <span class="card-number">05</span>
+                    <h3 class="card-name">THE HAND</h3>
+                    <p class="card-description">Una antigua sociedad de sombras. Su alcance esta en todas partes.</p>
+                    <div class="card-meta">
+                        <span class="card-status status-villain">ORGANIZACION</span>
+                        <span class="card-threat">NIVEL: DESCONOCIDO</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Interactive Data Section -->
+    <section class="data-section" id="data-section">
+        <div class="data-container">
+            <div class="data-panel">
+                <div class="panel-header">
+                    <span class="panel-label">[ SPIDER-TRAVERSE SYSTEM ]</span>
+                    <div class="panel-indicators">
+                        <span class="indicator" id="score-display">SCORE: 0000</span>
+                        <span class="indicator" id="speed-display">SPEED: 100%</span>
+                        <span class="indicator" id="integrity-display">SUIT: 100%</span>
+                    </div>
+                </div>
+                <div class="canvas-container" id="game-container">
+                    <canvas id="spider-traverse"></canvas>
+                    <div class="game-overlay" id="game-overlay">
+                        <div class="game-start">
+                            <h3 class="game-title">SPIDER-TRAVERSE</h3>
+                            <p class="game-desc">Esquiva obstaculos. Recoge datos. Sobrevive.</p>
+                            <button class="game-button" id="start-game">INICIAR SIMULACION</button>
+                        </div>
+                    </div>
+                    <div class="game-over" id="game-over" style="display: none;">
+                        <h3 class="game-title">SYSTEM BREACH</h3>
+                        <p class="game-desc" id="final-score">0 POINTS</p>
+                        <button class="game-button" id="restart-game">REINTENTAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="galeria" id="galeria">
+        <div class="galeria-header">
+            <div class="section-label">[ SECCION 03 ]</div>
+            <h2 class="galeria-title">GALLERY</h2>
+            <p class="galeria-subtitle">Fotogramas de la pelicula</p>
+        </div>
+        <div class="galeria-grid">
+            <div class="gallery-item large">
+                <img src="images/spidey-scorpion.jpg" alt="Spider-Man vs Scorpion" loading="lazy">
+                <div class="gallery-caption">
+                    <span class="caption-label">ESCENA 01</span>
+                    <span class="caption-title">Spider-Man vs Scorpion</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-2.jpg" alt="Spider-Man swinging" loading="lazy">
+                <div class="gallery-caption">
+                    <span class="caption-label">ESCENA 02</span>
+                    <span class="caption-title">Web-Swinging</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-3.jpg" alt="Spider-Man action" loading="lazy">
+                <div class="gallery-caption">
+                    <span class="caption-label">ESCENA 03</span>
+                    <span class="caption-title">City Patrol</span>
+                </div>
+            </div>
+            <div class="gallery-item wide">
+                <img src="images/cast-poster.jpg" alt="Cast poster" loading="lazy">
+                <div class="gallery-caption">
+                    <span class="caption-label">POSTER</span>
+                    <span class="caption-title">Elenco Principal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-hud">
+            <div class="hud-corner top-left"></div>
+            <div class="hud-corner top-right"></div>
+            <div class="hud-corner bottom-left"></div>
+            <div class="hud-corner bottom-right"></div>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">SPIDER-MAN: BRAND NEW DAY</span>
+                    <span class="footer-tagline">END OF TRANSMISSION</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Use</a>
+                    <a href="https://www.marvel.com" target="_blank" class="footer-link">Marvel Official</a>
+                </div>
+                <div class="footer-data">
+                    <div class="data-line" id="footer-data-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <span> 2026 Marvel Studios. All rights reserved.</span>
+            <span>Spider-Man: Brand New Day - In theatres July 31, 2026</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
